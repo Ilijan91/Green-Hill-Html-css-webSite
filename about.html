@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>O nama</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i,800&amp;subset=latin-ext" rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+		
+	var respmenu 		= $('#respmenu');
+	var	menu 			= $('#nav>ul');
+
+	$(respmenu).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var sirina = $(window).width();
+		if(sirina > 768 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}	
+	});
+	
+});	
+</script>
+
+</head>
+
+<body>
+
+<header id="header">
+	<div id="headerTop">
+		<div class="wrapper">
+			<p><i class="fas fa-phone"></i>&nbsp;011/2458-541 &nbsp; 064/6548-43</p>
+		</div>
+	</div><!--end of #headerTop-->
+	<div id="headerBottom">
+		<div class="wrapper">
+			<div id="logo">
+				<a href="index.html"><img src="Images/logo1.jpg" alt="" width="100px" height="100px"></a>
+			</div>
+			<div id="nav">
+			<a href="#" id="respmenu" class="button"><i class="fas fa-bars"></i>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</a>
+				<ul>
+					<li><a href="about.html">O nama</a></li>
+					<li><a href="galery.html">Galerija</a></li>
+					<li><a href="contact.html">Kontakt</a></li>
+				</ul>
+			</div><!--end of #nav-->
+		</div>
+	</div><!--end of #headerBottom-->
+</header><!--end of #header-->
+<main id="onama">
+	<div class="wrapper">
+		<div id="onamaText">
+			<h1>O nama</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus tenetur earum pariatur consectetur perspiciatis quasi nobis odio. Aperiam perferendis vitae, dolore eum! Reprehenderit officiis enim, incidunt explicabo placeat velit ad, quam quia cumque voluptatum quis mollitia fugiat unde nam ab.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis recusandae accusantium id sint, porro velit nemo quas, tempore voluptate ipsam, modi. Obcaecati pariatur, nemo ex incidunt, ad sunt fugiat similique nulla explicabo omnis dolorum vitae minus autem officia recusandae nihil quos minima sint fugit vel eum, velit dolores. Maxime, a!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus tenetur earum pariatur consectetur perspiciatis quasi nobis odio. Aperiam perferendis vitae, dolore eum! Reprehenderit officiis enim, incidunt explicabo placeat velit ad, quam quia cumque voluptatum quis mollitia fugiat unde nam ab.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis recusandae accusantium id sint, porro velit nemo quas, tempore voluptate ipsam, modi. Obcaecati pariatur, nemo ex incidunt, ad sunt fugiat similique nulla explicabo omnis dolorum vitae minus autem officia recusandae nihil quos minima sint fugit vel eum, velit dolores. Maxime, a!</p>
+		</div>
+	</div>
+</main>
+
+
+<footer id="footer">
+	<div class="wrapper">
+		<div id="footerTop">
+			<div class="futer">
+			<h3>O nama</h3>
+				<ul>
+					<a href="index.html"><li>Naslovna</li></a>
+					<a href="about.html"><li>O nama</li></a>
+					<a href="galery.html"><li>Galerija</li></a>
+					<a href="contact.html"><li>Kontakt</li></a>
+				</ul>
+			</div>
+			<div class="futer">
+			<h3>Usluge</h3>
+				<ul>
+					<a href="#"><li>Jelovnik</li></a>
+					<a href="#"><li>Proslave</li></a>
+					<a href="#"><li>Catering</li></a>
+					<a href="#"><li>Rezervacije</li></a>
+				</ul>
+			</div>
+			<div class="futer">
+			<h3>Kontakt</h3>
+				<ul>
+					<li><i class="fas fa-phone-square"></i>&nbsp;Telefon:
+					<ul>
+						<li>+381 (11)2458-541</li>
+						<li>+381 (64)6548-43</li>
+					</ul></li>
+					<li><i class="fas fa-envelope"></i>&nbsp;E mail:</li>
+					<li>office@restoranzelenobrdo.rs</li>
+				</ul>
+				<div id="social">
+					<a href="#"><i class="fab fa-facebook-square"></i></a>
+					<a href="#"><i class="fab fa-twitter-square"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+			<div class="futer">
+			<h3>Adresa</h3>
+				<ul>
+					<li>Bulevar kralja aleksandra 510a</li>
+					<li>11000 Beograd</li>
+					<li>Srbija</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+		<div id="footerBottom">
+			<div class="wrapper">
+				<p>Copyright @ Restoran Zeleno Brdo <a href="index.html"><span>www.restoranzelenobrdo.rs</span></a></p>
+			</div>
+		</div>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
